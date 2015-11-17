@@ -12,8 +12,6 @@ import (
 	"net/http"
 )
 
-// BobK:  This is a bizarre declaration...
-// on P14 it is called a "composite literal".  Maybe CH04 makes sense of it?
 var palette = []color.Color{color.White, color.Black}
 
 const (
