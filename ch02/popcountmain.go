@@ -7,6 +7,7 @@ import (
 	"fmt"
 )
 
+// TODO: This is just unnatural to me, why does this return a pointer?
 var x = flag.Uint64("x", 0, "x is an unsigned integer")
 
 func main() {
