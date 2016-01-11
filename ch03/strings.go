@@ -1,6 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
+
+func lenOfString(label string, s string) {
+	fmt.Printf("%s's value is \"%s\", len is %d, utf8.RuneCountInString is %d\n",
+		label,
+		s,
+		len(s),
+		utf8.RuneCountInString(s))
+}
+
+func printRunesInString(label string, s string) {
+	fmt.Printf("%s printRunesInString(\"%s\")\n", label, s)
+	for i := 0; i < len(s); {
+		r, size := utf8.DecodeRuneInString(s[i:])
+		fmt.Printf("%d\t%c\n", i, r)
+		i += size
+	}
+}
 
 func main() {
 	s := "hello, world"
@@ -28,4 +48,12 @@ func main() {
 	s1 += ", right foot"
 	fmt.Println(s1) // "left foot, right foot"
 	fmt.Println(t) // "left foot"
+
+	helloNonAscii := "Hello, 世界"
+	lenOfString("helloNonAscii", helloNonAscii)
+	printRunesInString("helloNonAscii",helloNonAscii)
+	helloAscii := "Hello, Robert"
+	lenOfString("helloAscii", helloAscii)
+	printRunesInString("helloAscii",helloAscii)
+
 }

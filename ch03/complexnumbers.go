@@ -19,4 +19,8 @@ func main() {
 	fmt.Println(x1 * y1) // "(-5+10i)"
 
 	fmt.Println(cmplx.Sqrt(-1)) // "(0+1i)"
+
+	// This is kind-of strange to me
+	robert := 1 + 10i + 2 + 10i
+	fmt.Println(robert)
 }
