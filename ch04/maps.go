@@ -18,7 +18,32 @@ func main() {
 	fmt.Printf("bob %v, tom %v, alice %v\n", ages["bob"], ages["tom"], ages["alice"])
 	ages["tom"] += 1
 	fmt.Printf("bob %v, tom %v, alice %v\n", ages["bob"], ages["tom"], ages["alice"])
-	fmt.Printf("sorted %v\n",sortMap(ages))
+	fmt.Printf("sorted %v\n", sortMap(ages))
+
+	if _, ok := ages["horatio"]; !ok {
+		fmt.Println("no horatio")
+	}
+
+	mapHasName(ages, "horatio")
+	mapHasName(ages, "bob")
+}
+
+func equal(x, y map[string]int) bool {
+	if len(x) != len(y) {
+		return false
+	}
+	for k, xv := range x {
+		if yv, ok := y[k]; !ok || yv != xv {
+			return false
+		}
+	}
+	return true
+}
+
+func mapHasName(src map[string]int, name string) bool {
+	age, ok := src[name]
+	fmt.Printf("src[\"%s\"] age: %d, ok: %v\n", name, age, ok)
+	return ok
 }
 
 func sortMap(src map[string]int) []name_and_age {
@@ -37,4 +62,3 @@ func sortMap(src map[string]int) []name_and_age {
 	}
 	return sorted
 }
-
