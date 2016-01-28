@@ -40,6 +40,8 @@ type Wheel struct {
 }
 
 func main() {
+	var 世界 = 1
+	fmt.Printf("hey %v\n", 世界)
 	dilbert.Salary -= 5000 // demoted, for writing too few lines of code
 	dilbert.Position = "Assistand Under Secretary"
 
