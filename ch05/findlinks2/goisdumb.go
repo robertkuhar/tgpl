@@ -1,10 +1,10 @@
 package main
 
 import (
-	"golang.org/x/net/html"
-	"os"
 	"fmt"
+	"golang.org/x/net/html"
 	"net/http"
+	"os"
 )
 
 // visit appends to links each link found in n and returns the result.
