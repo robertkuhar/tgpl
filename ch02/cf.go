@@ -1,4 +1,4 @@
-// Cf converts its numeric argument to Celcius and Fahrenheit
+// Cf converts its numeric argument to Celsius and Fahrenheit
 package main
 
 import (
