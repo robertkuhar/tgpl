@@ -3,7 +3,7 @@ package main
 import (
 	"math"
 	"fmt"
-"strings"
+	"strings"
 )
 
 func hypot(x, y float64) float64 {
