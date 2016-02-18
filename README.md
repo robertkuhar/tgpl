@@ -14,7 +14,7 @@ WingDings Autumn 2015
 |Jan 13|Doug P| CH03: Basic Data Types (30 Pages)|
 |Jan 27|Mark C| CH04: Composite Types (38 Pages)|
 |Feb 10|George S| CH05: Functions (36 Pages)|
-|Feb 24|Steve L / Beau H| CH06: Methods (16 Pages) / CH07: Interfaces, 7.1 through 7.5, (10ish pages) |
+|Feb 24|Steve L<br>Beau H| CH06: Methods (16 Pages)<br>CH07: Interfaces, 7.1 through 7.5, (10ish pages) |
 |Mar 09|Beau H| CH07: Interfaces, 7.6 through 7.15 (36ish Pages)|
 |Mar 23|Stan D| CH08: Goroutines and Channels (40 Pages)|
 |Apr 13|George S| CH09: Concurrency with Shared Variables (36 Pages)|
