@@ -4,7 +4,8 @@ http://www.gopl.io/
 
 WingDings Autumn 2015
 
-# Tentative Schedule
+## Tentative Schedule
+
 | Date | Moderator | Topic |
 |------|-----------|-------|
 |Nov 11|Bob K|CH01: Tutorial (26 Pages)|
