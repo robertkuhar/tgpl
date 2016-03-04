@@ -14,7 +14,7 @@ var period = flag.Duration("period", 1 * time.Second, "sleep period")
 
 func main() {
 	flag.Parse()
-	fmt.Printf("At %s, Sleeping for %v at %s...\n", time.Now().UTC(), *period)
+	fmt.Printf("At %s, Sleeping for %v...\n", time.Now().UTC(), *period)
 	time.Sleep(*period)
 	fmt.Printf("At %s, Awakened\n", time.Now().UTC())
 
