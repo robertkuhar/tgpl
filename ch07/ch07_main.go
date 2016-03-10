@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"bytes"
 	"github.com/robertkuhar/tgpl/ch07/bytecounter"
+	"io"
+	"errors"
 )
 
 func main() {
@@ -23,5 +25,5 @@ func main() {
 	fmt.Fprintf(&c, "hello, %s", name)
 	fmt.Println(c) // "12", = len("hello, Dolly")
 
-
+	fmt.Println("io.EOF == errors.New(\"EOF\")", io.EOF == errors.New("EOF"))
 }
