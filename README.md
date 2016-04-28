@@ -22,5 +22,5 @@ WingDings Autumn 2015
 |Apr 13|Stewart B| CH09: Concurrency with Shared Variables (36 Pages)|
 |Apr 27|Bob K| CH10: Packages and the Go Tool (18 Pages)|
 |May 11|Beau H| CH11: Testing (28 Pages)|
-|May 25|?| CH12: Reflection (24 Pages)|
-|Jun 08|?| CH13: Low-Level Programming (14 Pages)|
+|May 25|Beau H| CH12: Reflection (24 Pages)|
+|Jun 08|Bob K| CH13: Low-Level Programming (14 Pages)|

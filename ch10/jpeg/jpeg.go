@@ -23,6 +23,5 @@ func toJPEG(in io.Reader, out io.Writer) error {
 		return err
 	}
 	fmt.Fprintln(os.Stderr, "Input format =", kind)
-	// BobK:  I have totally forgotten how the Options syntax is working
 	return jpeg.Encode(out,img,&jpeg.Options{Quality:95})
 }
